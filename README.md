@@ -2,6 +2,10 @@
 这是我写的第一个Swift Demo，用于刷微博，当然功能很简单，bug还是多得去的。
 而且是Command Line Tool。。。
 
+截图:
+
+![image](/Screenshot/1.png)
+
 如何使用？
 
 1. 首先，你需要在[新浪微博开发平台](http://open.weibo.com/wiki/首页)注册应用，以获取AppKey
