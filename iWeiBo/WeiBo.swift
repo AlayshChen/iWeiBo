@@ -22,9 +22,8 @@ class WeiBo: NSObject {
             retweeted_status = WeiBo(dic: retweetedDic)
         }
         user = User(dic: dic["user"] as NSDictionary)
-        created_at = (dic["created_at"] as String).substringToIndex(19)
+        created_at = (dic["created_at"] as NSString).substringToIndex(19)
     }
-    
     func show() {
         print("--------------------------------------------------------------------------------")
         printGreenStr("\(user.name):")

@@ -125,7 +125,7 @@ class Menu: NSObject {
                         }
                     }}, errors: {error in println(error)})
             case let x  where x.hasPrefix("c "):
-                if let index = x.substringFromIndex(2).toInt() {
+                if let index = (x as NSString).substringFromIndex(2).toInt() {
                     if let weibo = result[index] as? WeiBo {
                         let id = weibo.id
                         funhandle = RESTEngine.getCommont
@@ -142,7 +142,7 @@ class Menu: NSObject {
                     }
                 }
             case let x where x.hasPrefix("l "):
-                if let index = x.substringFromIndex(2).toInt() {
+                if let index = (x as NSString).substringFromIndex(2).toInt() {
                     if let weibo = result[index] as? WeiBo {
                         weibo.user.show()
                         weibo.show()

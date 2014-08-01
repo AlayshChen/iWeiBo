@@ -9,7 +9,7 @@
 import Cocoa
 
 func runCommand(command: String) {
-    var pipe = NSPipe.pipe()
+    var pipe = NSPipe()
     var task = NSTask()
     task.launchPath = "/bin/sh"
     task.arguments = ["-c", command]

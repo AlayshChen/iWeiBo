@@ -62,7 +62,7 @@ class RESTEngine: NSObject {
                 jsonDic in
                 let weibosJson: NSArray = jsonDic["statuses"] as NSArray
                 var weibos:NSMutableArray = []
-                for dic: NSDictionary! in weibosJson {
+                for dic in weibosJson as [NSDictionary] {
                     let weibo = WeiBo(dic: dic)
                     weibos.addObject(weibo)
                 }
@@ -81,7 +81,7 @@ class RESTEngine: NSObject {
             jsonDic in
             let weibosJson: NSArray = jsonDic["statuses"] as NSArray
             var weibos:NSMutableArray = []
-            for dic: NSDictionary! in weibosJson {
+            for dic in weibosJson as [NSDictionary] {
                 let weibo = WeiBo(dic: dic)
                 weibos.addObject(weibo)
             }
@@ -114,7 +114,7 @@ class RESTEngine: NSObject {
                 jsonDic in
                 let weibosJson: NSArray = jsonDic["statuses"] as NSArray
                 var weibos:NSMutableArray = []
-                for dic: NSDictionary! in weibosJson {
+                for dic in weibosJson as [NSDictionary] {
                     let weibo = WeiBo(dic: dic)
                     weibos.addObject(weibo)
                 }
@@ -145,7 +145,7 @@ class RESTEngine: NSObject {
             {
                 jsonDic in
                 let weibosJson: NSArray = jsonDic["statuses"] as NSArray
-                for dic: NSDictionary! in weibosJson {
+                for dic in weibosJson as [NSDictionary] {
                     let weibo = WeiBo(dic: dic)
                     weibo.show()
                 }
@@ -163,7 +163,7 @@ class RESTEngine: NSObject {
                 jsonDic in
                 let commentsJson: NSArray = jsonDic["comments"] as NSArray
                 var comments: NSMutableArray = []
-                for dic: NSDictionary! in commentsJson {
+                for dic in commentsJson as [NSDictionary] {
                     let comment = WeiBo(dic: dic)
                     comments.addObject(comment)
                 }
