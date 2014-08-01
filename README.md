@@ -1,6 +1,5 @@
 
-这是我写的第一个Swift Demo，用于刷微博，当然功能很简单，bug还是多得去的。
-而且是Command Line Tool。。。
+这是我写的第一个Swift Demo，用于刷微博，当然功能很简单，bug还是多得去的,而且是Command Line Tool.
 
 截图:
 
@@ -14,3 +13,4 @@
 ,点击调用接口，在返回的json数据中找到*"user": {"id": 2839054733,*这里的id就是uid了。
 
 3. 打开RESTEngine.swift，填写kUid,kAppKey,kAccessToken,然后运行。。。
+
