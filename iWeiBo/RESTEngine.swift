@@ -8,9 +8,9 @@
 
 import Cocoa
 
-let kUid = "2839054733"
-let kAppKey = "3063462897"
-let kAccessToken = "2.004p4IGDtdy_2D72d2a9f108tDcuED"
+let kUid = ""
+let kAppKey = ""
+let kAccessToken = ""
 let kHostUrl = "https://api.weibo.com"
 let kPublicJson = "/2/statuses/public_timeline.json"
 let kFriendJson = "/2/statuses/friends_timeline.json"
