@@ -1,6 +1,6 @@
 
 这是我写的第一个Swift Demo，用于刷微博，当然功能很简单，bug还是多得去的,而且是Command Line Tool.
-
+编译环境:Xcode beta6
 截图:
 
 ![image](/Screenshot/1.png)
